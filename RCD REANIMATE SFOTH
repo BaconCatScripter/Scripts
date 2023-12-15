@@ -1,0 +1,121 @@
+-- uses paid hats but u can change to free hats easily
+-- you are free to add the death point function. --
+
+local settings = {
+FlingItem = "Sword", -- put your tool name here
+}
+
+local function equipTools() -- coded by nil (i forgor)
+    local backpack = game.Players.LocalPlayer.Backpack
+    for _, item in pairs(backpack:GetChildren()) do
+        if item:IsA("Tool") and item.Name == settings.FlingItem then
+            item.Parent = game.Players.LocalPlayer.Character
+        end
+    end
+end
+
+equipTools()
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "RIP FE Scripts";
+	Text = "2019-2023";
+	Icon = ""})
+Duration = 3;
+
+loadstring(game:HttpGet("https://pastebin.com/raw/dZeHRpWR"))()
+
+player = game.Players.LocalPlayer
+cplayer = player.Character
+
+local function gp(parent, name, className)
+    if typeof(parent) == "Instance" then
+        for i, v in pairs(parent:GetChildren()) do
+            if (v.Name == name) and v:IsA(className) then
+                return v
+            end
+        end
+    end
+    return nil
+end
+
+local hat2 = gp(cplayer, "Front", "Accessory")
+local handle2 = gp(hat2, "Handle", "BasePart")
+local att2 = gp(handle2, "att1_Handle", "Attachment")
+att2.Parent = cplayer["Torso"]
+att2.Position = Vector3.new(0, 0, 0)
+att2.Rotation = Vector3.new(0, 180, 0)
+
+local hat2 = gp(cplayer, "Extra Left hand (Blocky)_white", "Accessory")
+local handle2 = gp(hat2, "Handle", "BasePart")
+local att2 = gp(handle2, "att1_Handle", "Attachment")
+att2.Parent = cplayer["Left Arm"]
+att2.Position = Vector3.new(0, -0.25, 0)
+att2.Rotation = Vector3.new(-110, 0, 0)
+
+local hat2 = gp(cplayer, "Extra Right hand (Blocky)_white", "Accessory")
+local handle2 = gp(hat2, "Handle", "BasePart")
+local att2 = gp(handle2, "att1_Handle", "Attachment")
+att2.Parent = cplayer["Right Arm"]
+att2.Position = Vector3.new(0, -0.25, 0)
+att2.Rotation = Vector3.new(-110, 0, 0) --LavanderHair
+
+local hat2 = gp(cplayer, "Unloaded head", "Accessory")
+local handle2 = gp(hat2, "Handle", "BasePart")
+local att2 = gp(handle2, "att1_Handle", "Attachment")
+att2.Parent = cplayer["Right Leg"]
+att2.Position = Vector3.new(0, 0, 0) --Robloxclassicred
+att2.Rotation = Vector3.new(0, -90, 90)
+
+local hat2 = gp(cplayer, "MeshPartAccessory", "Accessory")
+local handle2 = gp(hat2, "Handle", "BasePart")
+local att2 = gp(handle2, "att1_Handle", "Attachment")
+att2.Parent = cplayer["Left Leg"]
+att2.Position = Vector3.new(0, 0, 0) 
+att2.Rotation = Vector3.new(0, 90, 90)
+
+while true do
+        
+wait(5.55)
+
+equipTools()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/dZeHRpWR"))()
+
+player = game.Players.LocalPlayer
+cplayer = player.Character
+
+local hat2 = gp(cplayer, "Front", "Accessory")
+local handle2 = gp(hat2, "Handle", "BasePart")
+local att2 = gp(handle2, "att1_Handle", "Attachment")
+att2.Parent = cplayer["Torso"]
+att2.Position = Vector3.new(0, 0, 0)
+att2.Rotation = Vector3.new(0, 180, 0)
+
+local hat2 = gp(cplayer, "Extra Left hand (Blocky)_white", "Accessory")
+local handle2 = gp(hat2, "Handle", "BasePart")
+local att2 = gp(handle2, "att1_Handle", "Attachment")
+att2.Parent = cplayer["Left Arm"]
+att2.Position = Vector3.new(0, -0.25, 0)
+att2.Rotation = Vector3.new(-110, 0, 0)
+
+local hat2 = gp(cplayer, "Extra Right hand (Blocky)_white", "Accessory")
+local handle2 = gp(hat2, "Handle", "BasePart")
+local att2 = gp(handle2, "att1_Handle", "Attachment")
+att2.Parent = cplayer["Right Arm"]
+att2.Position = Vector3.new(0, -0.25, 0)
+att2.Rotation = Vector3.new(-110, 0, 0) --LavanderHair
+
+local hat2 = gp(cplayer, "Unloaded head", "Accessory")
+local handle2 = gp(hat2, "Handle", "BasePart")
+local att2 = gp(handle2, "att1_Handle", "Attachment")
+att2.Parent = cplayer["Right Leg"]
+att2.Position = Vector3.new(0, 0, 0) --Robloxclassicred
+att2.Rotation = Vector3.new(0, -90, 90)
+
+local hat2 = gp(cplayer, "MeshPartAccessory", "Accessory")
+local handle2 = gp(hat2, "Handle", "BasePart")
+local att2 = gp(handle2, "att1_Handle", "Attachment")
+att2.Parent = cplayer["Left Leg"]
+att2.Position = Vector3.new(0, 0, 0) 
+att2.Rotation = Vector3.new(0, 90, 90)
+end
