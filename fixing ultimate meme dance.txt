@@ -175,61 +175,6 @@ local accessorylimbs={
 
 }
 
-local model = workspace.non
-local mouse = game:GetService("Players").LocalPlayer:GetMouse()
-local Torso = model.Torso
-local RS = Torso:FindFirstChild("Right Shoulder")
-local LS = Torso:FindFirstChild("Left Shoulder")
-local RH = Torso:FindFirstChild("Right Hip")
-local LH = Torso:FindFirstChild("Left Hip")
-local Neck = Torso:FindFirstChild("Neck")
-local Torso = model.Torso
-local Head = model.Head
-local Humanoid = model.Humanoid
-local LeftArm = model["Left Arm"]
-local LeftLeg = model["Left Leg"]
-local RightArm = model["Right Arm"]
-local RightLeg = model["Right Leg"]
-local RootPart = model.HumanoidRootPart
-local attack = false
-local idle = 0
-local Gen = "Girl"
-local ToolMode = 1
-local sprintmode=false
-local jp = 50
-local ws = 6
-local inAir=true
-local inAir2=true
-local equipped = true
-local MoveTH = true
-local MoveArms = true
-local MoveLegs = true
-local toolAon = false
-local stopTA = false
-local sine = 0
-local change = 1
-local toolAnim = "None"
-local toolAnimTime = 0
-local Anim="Idle"
-local RJ = model.HumanoidRootPart:FindFirstChild("RootJoint")
-local cn = CFrame.new
-local cf = CFrame.new
-local ca2 = CFrame.Angles
-local mf = math.floor
-local Create = FELOADLIBRARY.Create
-local canstoptuant1 = false
-local stoptuant1 = false
-local MenyOpen = false
-function swait(num)
-	if num == 0 or num == nil then
-		game:service'RunService'.RenderStepped:wait(0)
-	else
-		for i = 0, num do
-			game:service'RunService'.RenderStepped:wait(0)
-		end
-	end
-end
-
 function stopAnimations()
 	coroutine.resume(coroutine.create(function()
 	model.Animate:Destroy()
