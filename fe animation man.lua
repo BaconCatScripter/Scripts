@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/BaconCatScripter/Scripts/main/new%20bot%20reanim.lua",true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BaconCatScripter/Scripts/main/emper%20reanim.txt",true))()
 
 
 
